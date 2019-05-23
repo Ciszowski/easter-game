@@ -1,0 +1,18 @@
+.loots{
+    height: 150px;
+    width: 200px;
+    background-color: #42B842;
+
+    display: inline-flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.img{
+    height: 45px;
+    width: 50px;
+}
+.titre, .rarete{
+    size: 1px;
+}

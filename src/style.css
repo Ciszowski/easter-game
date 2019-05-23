@@ -1,0 +1,125 @@
+
+body{
+	background-image: url('images/easter_island.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.player{
+	position: absolute;
+	width: 50px;
+	height: 65px;
+}
+
+.map{
+	width : 1000px; 
+	height: 600px;
+	background-color: #42b842;
+	border: 1px solid black;
+}
+
+.plateform{
+	position: relative;
+	width : 1000px; 
+	height: 600px;
+	margin: 50px auto;
+}
+
+.sprites{
+	display : inline-flex;
+}
+.rock{
+	background-image: url('images/rock.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.tree{
+	background-image: url('images/tree.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+.grass{
+	background-color: #42b842;
+}
+.chest{
+	background-image: url('images/chest.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.bushes{
+	background-image: url('images/bushes.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.divTxt {
+
+
+	visibility: hidden;
+	
+	animation-name: text;
+	animation-duration: 60s;
+	animation-delay: 10s;
+
+	background-color: #42B842; 
+	position: absolute;
+	height: 150px;
+	width: 200px;
+
+	left: 40px;
+	border-radius: 25% 25%;
+
+}
+.txt{
+
+	visibility: hidden;
+	
+	animation-name: text; 
+	animation-duration: 60s;
+	animation-delay: 10s;
+
+	position: absolute;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	top: 25px;
+	left: 30px;
+	
+} 
+
+.jouer{
+	margin: 25% auto;
+}
+
+/* @keyframes text {
+	from {visibility: visible;}
+	to {visibility: hidden; }
+} */
+
+
+.pos{
+	display: flex; 
+	justify-content: center;
+	margin: auto 30%
+}
+
+.title{
+
+	color: #42B842;
+	
+}
+
+
+.jouer{
+	display: flex;
+	justify-content: center;
+}
+
+.button{
+	height: 60px;
+	width: 120px;
+	background-color: #42B842;
+	border-radius: 25% 25%;
+}
