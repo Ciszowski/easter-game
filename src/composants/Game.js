@@ -36,7 +36,7 @@ class Game extends React.Component {
     specialAPI = () => {
         const { key } = this.state
         if (key === true) {
-            fetch('http://easteregg.wildcodeschool.fr/api/eggs/5cac51240d488f0da6151bd9')
+            fetch('http://tours.wilders.dev/api/eggs/5cac51240d488f0da6151bd9')
                 .then(res => res.json())
                 .then((eggs) => {
                     Swal.fire({
@@ -83,7 +83,7 @@ class Game extends React.Component {
         const random = Math.floor(Math.random() * 1000)
         if (Number(random) % 17 === 0) {
             console.log(random % 17, random, 'yes')
-            fetch('http://easteregg.wildcodeschool.fr/api/eggs/random/')
+            fetch('http://tours.wilders.dev/api/eggs/random/')
                 .then(res => {
                     console.log('api', res)
                     return res.json()
