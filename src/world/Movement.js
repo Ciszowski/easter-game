@@ -97,7 +97,7 @@ export default function handleMovement(player) {
             case 73:
                 return console.log('inventory', e.keyCode)
             default:
-                console.log(e.keyCode)
+                console.log(e.keyCode, 'keycode')
         }
     }
 

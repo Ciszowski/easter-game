@@ -18,6 +18,7 @@ import store from '../config/store'
 import { connect } from 'react-redux'
 
 import Inventory from '../accesories/inventory'
+import { nothing } from 'immer';
 
 
 class Game extends React.Component {
@@ -81,6 +82,7 @@ class Game extends React.Component {
     callAPI = () => {
         const { inventory } = this
         const random = Math.floor(Math.random() * 1000)
+        console.log(random,'callapi')
         if (Number(random) % 17 === 0) {
             console.log(random % 17, random, 'yes')
             fetch('http://tours.wilders.dev/api/eggs/random/')
@@ -116,18 +118,21 @@ class Game extends React.Component {
                         })
                     inventory.push({ name: eggs.name, image: eggs.image, rarity: eggs.rarity })
 
-                    store.dispatch({
+                   return store.dispatch({
                         type: 'INVENTORY',
                         payload: {
                             inventory
                         }
                     })
                 })
-        }
+        }else{
+            return console.log('ning')
+        }   
 
     }
 
     render() {
+
         const { message, interval, value } = this.state
         if (this.props.next === 1 && value === true) {
             Swal.fire({
